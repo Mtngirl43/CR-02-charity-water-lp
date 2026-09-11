@@ -1,47 +1,101 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Make Big Waves | charity: water</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="logo-link" href="#" aria-label="charity water home">
+        <img
+          class="logo"
+          src="img/water-can-transparent.png"
+          alt="charity water yellow jerry can logo"
+        >
+      </a>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
+      <div class="nav-links">
+        <a href="#impact">Our Impact</a>
+        <a href="#stories">Stories</a>
+        <a href="#involved">Get Involved</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <a
+        class="donate-button"
+        href="https://www.charitywater.org/donate"
+        target="_blank"
+      >
+        Donate Now
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="impact">
+      <div class="hero-text">
+        <h1>
+          Your Small Donation,<br>
+          <span>Makes Big Waves!</span>
+        </h1>
+
         <p>
-         
-    </section>
+          Every donation funds clean-water projects, with photos, updates,
+          and GPS coordinates showing the change you helped create!
+        </p>
+      </div>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
-        </div>
-    </section>
+      <div class="story-gallery">
+        <article class="story-card" id="stories">
+          <img
+            src="img/community-water.png"
+            alt="A woman carrying a container for water"
+          >
+          <div class="story-overlay">
+            <h2>Real Stories</h2>
+            <p>Meet the people whose lives are transformed by clean water.</p>
+          </div>
+        </article>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
+        <article class="story-card" id="involved">
+          <img
+            src="img/clean-water.png"
+            alt="A smiling child holding a glass of clean water"
+          >
+          <div class="story-overlay">
+            <h2>Real Change</h2>
+            <p>See how clean water strengthens health and opportunity.</p>
+          </div>
+        </article>
+
+        <article class="story-card" id="faq">
+          <img
+            src="img/flowing-water.png"
+            alt="Clean water flowing from a tap"
+          >
+          <div class="story-overlay">
+            <h2>Proven Impact</h2>
+            <p>Follow project updates through photos and GPS coordinates.</p>
+          </div>
+        </article>
+      </div>
     </section>
+  </main>
+
+  <footer>
+    <p>
+      100% of public donations go directly to clean-water projects.
+    </p>
+  </footer>
 </body>
 </html>
